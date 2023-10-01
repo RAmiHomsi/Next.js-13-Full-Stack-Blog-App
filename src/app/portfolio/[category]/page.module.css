@@ -1,0 +1,50 @@
+.button {
+  padding: 20px;
+  cursor: pointer;
+  background-color: #53c28b;
+  border: none;
+  border-radius: 5px;
+  width: max-content;
+  color: white;
+}
+
+.catTitle {
+  color: #53c28b;
+}
+
+.item {
+  display: flex;
+  gap: 50px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+/* or (2n+1) */
+.item:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+
+.imgContainer {
+  flex: 1;
+  height: 500px;
+  position: relative;
+}
+
+.img {
+  object-fit: cover;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+}
+
+.title {
+  font-size: 50px;
+}
+
+.desc {
+  font-size: 20px;
+}
