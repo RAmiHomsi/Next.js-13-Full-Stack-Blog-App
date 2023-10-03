@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import { useState } from "react";
 import style from "./page.module.css";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
