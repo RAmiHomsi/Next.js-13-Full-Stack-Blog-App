@@ -15,8 +15,6 @@ async function getData(id) {
   return res.json();
 }
 
-const data = await getData(params.id);
-
 //generate metadata dynamically
 export async function generateMetadata({ params }) {
   const post = await getData(params.id);
@@ -27,6 +25,7 @@ export async function generateMetadata({ params }) {
 }
 
 export default async function Post({ params }) {
+  const data = await getData(params.id);
   return (
     <div className={styles.container}>
       <div className={styles.top}>
