@@ -7,17 +7,17 @@ import Image from "next/image";
 export const dynamic = "force-dynamic";
 export const fetchCache = "force-no-store";
 
-async function getData() {
-  const res = await fetch("http://localhost:3000/api/posts", {
-    cache: "no-store",
-  });
-
+//http://localhost:3000
+const getData = async () => {
+  const res = await fetch(
+    "https://next-js-13-full-stack-blog-app.vercel.app/api/posts"
+  );
+  const posts = await res.json();
   if (!res.ok) {
     throw new Error("Failed to fetch data");
   }
-
-  return res.json();
-}
+  return posts;
+};
 
 const Blog = async () => {
   const data = await getData();
