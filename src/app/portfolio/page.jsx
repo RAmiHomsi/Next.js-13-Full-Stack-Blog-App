@@ -13,9 +13,6 @@ export default function Portfolio() {
         <Link href="/portfolio/websites" className={style.item}>
           <span className={style.title}>Websites</span>
         </Link>
-        <Link href="/portfolio/application" className={style.item}>
-          <span className={style.title}>Application</span>
-        </Link>
       </div>
     </div>
   );

@@ -52,7 +52,7 @@ export default function Login() {
         />
         <button className={style.button}>Login</button>
       </form>
-      <Link href="/dashboard/login">Register now</Link>
+      <Link href="/dashboard/register">Register now</Link>
     </div>
   );
 }

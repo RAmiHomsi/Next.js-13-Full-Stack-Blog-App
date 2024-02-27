@@ -21,7 +21,7 @@ export default function Navbar() {
     },
     {
       id: 3,
-      title: "Blog",
+      title: "Blogs",
       url: "/blog",
     },
     {
